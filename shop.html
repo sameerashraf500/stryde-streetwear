@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shop all — STRYDE</title>
+    <meta name="description" content="Shop hoodies, tees, outerwear, denim and accessories." />
+    <meta name="theme-color" content="#faf6f0" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="shop">
+    <div data-header></div>
+    <main>
+      <section class="phead phead-coral">
+        <p class="kicker">Drop 04 · Autumn / Winter 26</p>
+        <h1 class="h1 split" data-shop-title>Shop <em>all</em></h1>
+        <p class="lead">Heavyweight basics and statement pieces. Free delivery over Rs 7,500.</p>
+        <img class="phead-fig" src="assets/img/cut/w-tee-jeans.webp" alt="" aria-hidden="true" />
+      </section>
+      <section class="page">
+        <div class="shop-bar">
+          <div class="tabs" data-cats role="tablist" aria-label="Categories"></div>
+          <div class="shop-tools">
+            <div class="swatches" data-swatches aria-label="Filter by colour"></div>
+            <label class="sr" for="sort">Sort</label>
+            <select class="select" id="sort" data-sort>
+              <option value="feat">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+              <option value="new">Newest</option>
+            </select>
+          </div>
+        </div>
+        <p class="result-n" data-count></p>
+        <div class="grid" data-grid></div>
+        <div class="no-res" data-none hidden><h2 class="h3">Nothing here yet</h2><p class="muted">Try another colour or category.</p><button type="button" class="btn btn-ink" data-reset>Clear filters</button></div>
+      </section>
+    </main>
+    <div data-footer></div>
+    <script src="js/data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/pages.js"></script>
+  </body>
+</html>

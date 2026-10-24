@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — STRYDE</title>
+    <meta name="description" content="Checkout." />
+    <meta name="theme-color" content="#faf6f0" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="checkout">
+    <div data-header></div>
+    <main>
+      <section class="page" style="padding-top:clamp(40px,6vw,80px)">
+        <div class="co-steps"><span>Bag</span><span class="on">Details &amp; payment</span><span>Done</span></div>
+        <div class="bag-grid">
+          <form class="co" data-co novalidate>
+            <fieldset>
+              <legend>Contact</legend>
+              <div class="field-row">
+                <div class="field" data-field><label for="o-name">Full name</label><input id="o-name" required autocomplete="name" /><p class="ferr"></p></div>
+                <div class="field" data-field><label for="o-phone">Mobile</label><input id="o-phone" required data-type="phone" inputmode="tel" autocomplete="tel" placeholder="0300 1234567" /><p class="ferr"></p></div>
+              </div>
+              <div class="field" data-field><label for="o-email">Email for your receipt</label><input id="o-email" type="email" required autocomplete="email" /><p class="ferr"></p></div>
+            </fieldset>
+            <fieldset>
+              <legend>Delivery</legend>
+              <div class="field" data-field><label for="o-addr">Address</label><input id="o-addr" required autocomplete="street-address" placeholder="House, street, area" /><p class="ferr"></p></div>
+              <div class="field-row">
+                <div class="field" data-field><label for="o-city">City</label><select id="o-city" required><option value="">Choose a city</option><option>Lahore</option><option>Karachi</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Gujrat</option><option>Peshawar</option><option>Sialkot</option><option>Other</option></select><p class="ferr"></p></div>
+                <div class="field" data-field><label for="o-zip">Postal code (optional)</label><input id="o-zip" inputmode="numeric" autocomplete="postal-code" /><p class="ferr"></p></div>
+              </div>
+              <label class="opt"><input type="radio" name="ship" value="standard" checked /><span><b>Standard</b><small>2&ndash;4 working days</small></span><em data-ship-std>Rs 250</em></label>
+              <label class="opt"><input type="radio" name="ship" value="express" /><span><b>Express</b><small>Next day in Lahore, Karachi, Islamabad</small></span><em>Rs 600</em></label>
+            </fieldset>
+            <fieldset>
+              <legend>Payment</legend>
+              <label class="opt"><input type="radio" name="pay" value="Cash on delivery" checked /><span><b>Cash on delivery</b><small>Pay the rider when it arrives</small></span></label>
+              <label class="opt"><input type="radio" name="pay" value="Card (demo)" /><span><b>Debit / credit card</b><small>Demo only: no card details are collected</small></span></label>
+              <label class="opt"><input type="radio" name="pay" value="Bank transfer" /><span><b>Bank transfer</b><small>We send account details by email</small></span></label>
+            </fieldset>
+            <button type="submit" class="btn btn-ink btn-block magnet">Place order</button>
+            <p class="muted small" style="margin-top:12px">This is a concept store. No real order is placed and nothing is charged.</p>
+          </form>
+          <aside class="summary">
+            <p class="h4">Order</p>
+            <div data-co-lines></div>
+            <form class="promo" data-promo style="margin-top:16px"><label class="sr" for="promo2">Promo code</label><input class="input" id="promo2" placeholder="Promo code" data-promo-in /><button class="btn btn-line" type="submit">Apply</button></form>
+            <p class="promo-msg" data-promo-msg></p>
+            <dl class="totals" data-totals></dl>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <div data-footer></div>
+    <script src="js/data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/pages.js"></script>
+  </body>
+</html>

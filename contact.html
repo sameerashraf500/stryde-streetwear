@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — STRYDE</title>
+    <meta name="description" content="Contact STRYDE, shipping, returns and size guide." />
+    <meta name="theme-color" content="#faf6f0" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="contact">
+    <div data-header></div>
+    <main>
+      <section class="phead">
+        <p class="kicker">Contact</p>
+        <h1 class="h1 split">Talk to <em>us</em></h1>
+        <p class="lead">Questions about sizing, an order or a collab? We reply within a day.</p>
+      </section>
+      <section class="page">
+        <div class="contact-grid">
+          <div class="info">
+            <div class="rv"><p class="kicker">Studio</p><p>Main Boulevard, Gulberg III, Lahore</p></div>
+            <div class="rv"><p class="kicker">WhatsApp</p><p>0300 000 0000 (demo number)</p></div>
+            <div class="rv"><p class="kicker">Email</p><p>hello@stryde.example</p></div>
+            <div class="rv"><p class="kicker">Hours</p><p>Mon &ndash; Sat, 11 am &ndash; 9 pm</p></div>
+            <div class="map rv"><iframe title="Map of the studio area" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=74.33%2C31.50%2C74.37%2C31.53&amp;layer=mapnik&amp;marker=31.5155%2C74.3500"></iframe></div>
+          </div>
+          <form class="card-box rv" data-contact novalidate>
+            <h2 class="h3" style="margin-bottom:20px">Send a message</h2>
+            <div class="field-row">
+              <div class="field" data-field><label for="c-name">Name</label><input id="c-name" required autocomplete="name" /><p class="ferr"></p></div>
+              <div class="field" data-field><label for="c-email">Email</label><input id="c-email" type="email" required autocomplete="email" /><p class="ferr"></p></div>
+            </div>
+            <div class="field" data-field><label for="c-topic">Topic</label><select id="c-topic" required><option value="">Choose one</option><option>Sizing help</option><option>An existing order</option><option>Exchange</option><option>Collab or wholesale</option></select><p class="ferr"></p></div>
+            <div class="field" data-field><label for="c-msg">Message</label><textarea id="c-msg" rows="5" required minlength="10"></textarea><p class="ferr"></p></div>
+            <button type="submit" class="btn btn-ink btn-block magnet">Send message</button>
+            <p class="muted" data-c-done hidden style="margin-top:14px"></p>
+          </form>
+        </div>
+        <div class="faq" id="faq">
+          <h2 class="h2 split center" style="margin-bottom:30px">Good <em>questions</em></h2>
+          <div class="acc rv"><button type="button" aria-expanded="false">How long does delivery take?<i></i></button><div class="acc-body"><div>2&ndash;4 working days in major cities and up to 6 days elsewhere in Pakistan. Delivery is Rs 250 and free over Rs 7,500.</div></div></div>
+          <div class="acc rv"><button type="button" aria-expanded="false">Can I exchange a size?<i></i></button><div class="acc-body"><div>Yes. Exchanges are free within 7 days if the piece is unworn with tags on. Message us and we will arrange a pickup.</div></div></div>
+          <div class="acc rv"><button type="button" aria-expanded="false">How do your sizes fit?<i></i></button><div class="acc-body"><div>Tees and hoodies are cut oversized. Take your usual size for a boxy fit, or one size down for a regular fit. Every product page has a size chart.</div></div></div>
+          <div class="acc rv"><button type="button" aria-expanded="false">Do you offer cash on delivery?<i></i></button><div class="acc-body"><div>Yes, across Pakistan. You can also pay by card or bank transfer at checkout.</div></div></div>
+          <div class="acc rv"><button type="button" aria-expanded="false">Will a drop restock?<i></i></button><div class="acc-body"><div>Core colours restock. Limited pieces usually don&rsquo;t. Join the newsletter to hear first.</div></div></div>
+        </div>
+      </section>
+    </main>
+    <div data-footer></div>
+    <script src="js/data.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/pages.js"></script>
+  </body>
+</html>
